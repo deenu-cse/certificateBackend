@@ -18,7 +18,7 @@ app.post('/api/certificates', async (req, res) => {
             internshipField,
         });
 
-        const qrCodeData = `${'https://novanectarx-backend.vercel.app/'}/verify/checkCertificate`;
+        const qrCodeData = `${'https://novancerverify.vercel.app/'}/verify/checkCertificate`;
         const qrCodeUrl = await Qrcode.toDataURL(qrCodeData);
 
         newCertificate.qrCodeUrl = qrCodeUrl;
